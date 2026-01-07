@@ -39,8 +39,10 @@ jobs:
 
       - name: Build the JupyterLite site
         run: |
+          mkdir -p demo/notebooks
+          cp *.ipynb demo/notebooks/
           cd demo
-          jupyter lite build --output-dir dist
+          jupyter lite build --contents notebooks --output-dir dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
