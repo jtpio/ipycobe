@@ -35,7 +35,7 @@ jobs:
 
       - name: Install the dependencies
         run: |
-          python -m pip install jupyter-server jupyterlite-core jupyterlite-pyodide-kernel dist/ipycobe*.whl
+          python -m pip install jupyter-server jupyterlab-cursor-theme jupyterlite-core jupyterlite-pyodide-kernel dist/ipycobe*.whl
 
       - name: Build the JupyterLite site
         run: |
