@@ -1,6 +1,14 @@
 {
 	"name": "ipycobe",
 	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jtpio/ipycobe.git"
+	},
+	"homepage": "https://github.com/jtpio/ipycobe",
+	"bugs": {
+		"url": "https://github.com/jtpio/ipycobe/issues"
+	},
 	"scripts": {
 		"dev": "npm run build -- --sourcemap=inline --watch",
 		"build": "esbuild js/widget.tsx --minify --format=esm --bundle --outdir=src/ipycobe/static",
