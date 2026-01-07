@@ -1,4 +1,6 @@
 {
+	"name": "ipycobe",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "npm run build -- --sourcemap=inline --watch",
 		"build": "esbuild js/widget.tsx --minify --format=esm --bundle --outdir=src/ipycobe/static",
