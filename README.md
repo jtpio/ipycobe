@@ -1,5 +1,7 @@
 # ipycobe
 
+[![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge-launch.svg)](https://jtpio.github.io/ipycobe/)
+
 A Jupyter Widget for rendering an interactive globe, based on [cobe](https://cobe.vercel.app/) and built with [anywidget](https://anywidget.dev/).
 
 ![screenshot of ipycobe in a Jupyter notebook](screenshot.png)

@@ -35,12 +35,14 @@ jobs:
 
       - name: Install the dependencies
         run: |
-          python -m pip install jupyterlite-core jupyterlite-pyodide-kernel dist/ipycobe*.whl
+          python -m pip install jupyter-server jupyterlab-cursor-theme jupyterlite-core jupyterlite-pyodide-kernel dist/ipycobe*.whl
 
       - name: Build the JupyterLite site
         run: |
+          mkdir -p demo/notebooks
+          cp *.ipynb demo/notebooks/
           cd demo
-          jupyter lite build --output-dir dist
+          jupyter lite build --contents notebooks --output-dir dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
